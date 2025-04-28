@@ -8,22 +8,19 @@ export function NavBar({className = ""}: {className?: any}){
             <nav className="py-6">
                 <ul className="grid grid-cols-8 gap-10 justify-items-center items-center">
                     <li className="col-span-1">
-                        <a href="#" 
-                           className="text-2xl md:text-3xl font-bold text-gray-800 hover:text-gray-600 transition-colors duration-300" 
-                           onClick={(()=>{nagivate("/")})}>
+                        <a className="text-2xl md:text-3xl font-bold text-gray-800 hover:text-gray-600 transition-colors duration-300 cursor-pointer" 
+                           onClick={()=>{nagivate("/")}}>
                             DN.
                         </a>
                     </li>
                     <li className="col-start-3 col-end-5">
-                        <a href="#" 
-                           onClick={(()=>{nagivate("/contact")})}
-                           className="relative text-gray-700 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-700 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100">
+                        <a className="relative text-gray-700 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-700 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 cursor-pointer"
+                           onClick={()=>{nagivate("/contact")}}>
                             Contact
                         </a>
                     </li>
                     <li className="col-span-2">
-                        <a href="#" 
-                           className="relative text-gray-700 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-700 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100" 
+                        <a className="relative text-gray-700 hover:text-gray-900 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-gray-700 after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100 cursor-pointer"
                            onClick={()=>{nagivate("/projects")}}>
                             Projects
                         </a>

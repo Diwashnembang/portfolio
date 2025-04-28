@@ -12,9 +12,9 @@ let router = createHashRouter([
   {
     element: <RootLayout/>,
     children: [
-      { path: "/", element: <App /> },
-      { path: "/projects", element: <Projects></Projects> },
-      { path: "/contact", element: <Contact></Contact> }
+      { index:true, element: <App /> },
+      { path: "projects", element: <Projects></Projects> },
+      { path: "contact", element: <Contact></Contact> }
     ]
   }
 ])

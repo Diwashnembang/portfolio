@@ -21,19 +21,17 @@ export function Main() {
             </div>
           </div>
           
-          {/* Navigation for medium screens  */}
+          {/* Navigation for medium screens */}
           <ul className="hidden md:flex col-span-8 gap-8 items-center my-6 text-[17px] font-medium tracking-wide">
             <li>
-              <a href="#" 
-                 className="inline-block px-4 py-2 text-gray-700 hover:text-gray-900 relative group transition-all duration-300" 
+              <a className="inline-block px-4 py-2 text-gray-700 hover:text-gray-900 relative group transition-all duration-300 cursor-pointer" 
                  onClick={() => {nagivate("/contact")}}>
                 <span className="inline-block animate-[breathe_3s_ease-in-out_infinite]">Contact</span>
                 <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-gray-700 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
               </a>
             </li>
             <li>
-              <a href="#" 
-                 className="inline-block px-4 py-2 text-gray-700 hover:text-gray-900 relative group transition-all duration-300" 
+              <a className="inline-block px-4 py-2 text-gray-700 hover:text-gray-900 relative group transition-all duration-300 cursor-pointer" 
                  onClick={() => {nagivate("/projects")}}>
                 <span className="inline-block animate-[breathe_3s_ease-in-out_infinite]">Projects</span>
                 <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-gray-700 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -90,8 +88,7 @@ export function Main() {
       {/* Mobile navigation with improved typography */}
       <ul className="text-[17px] flex flex-col w-full gap-5 justify-items-center items-center h-full md:hidden font-medium tracking-wide">
         <li>
-          <a href="#" 
-             className="inline-block relative group" 
+          <a className="inline-block relative group cursor-pointer" 
              onClick={() => {nagivate("/contact")}}>
             <span className="inline-block animate-[breathe_3s_ease-in-out_infinite]">
               Contact
@@ -99,8 +96,7 @@ export function Main() {
           </a>
         </li>
         <li>
-          <a href="#" 
-             className="inline-block relative group" 
+          <a className="inline-block relative group cursor-pointer" 
              onClick={() => {nagivate("/projects")}}>
             <span className="inline-block animate-[breathe_3s_ease-in-out_infinite]">
               Projects
